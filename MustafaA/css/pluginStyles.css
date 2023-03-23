@@ -1,0 +1,77 @@
+html{
+    scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: calc(100vh - 60px); /* subtract height of navigation */
+  overflow-y: auto; /* enable vertical scrolling if necessary */
+  z-index: 9999; /* set z-index to be higher than other content */
+  background-color: #000000;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.content {
+  padding-top: 60px; /* make room for fixed nav */
+}
+
+nav ul li a.active {
+    color: orange;
+  }
+
+  nav.large {
+    height: 100px;
+    background-color: rgb(41, 41, 41);
+    transition: height 0.5s;
+  }
+  
+  nav.small {
+    height: 50px;
+    background-color: #000000;
+    transition: height 1.5s;
+  }
+  
+  #scrollUp {
+    bottom: 20px;
+    right: 20px;
+    background-color: orange;
+    color: #fff;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-decoration: none;
+    opacity: .9;
+    padding: 10px 20px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    -webkit-transition: background 200ms linear;
+    -moz-transition: background 200ms linear;
+    -o-transition: background 200ms linear;
+    transition: background 200ms linear;
+    -webkit-backface-visibility: hidden;
+}
+
+#scrollUp:hover {
+    background-color: rgb(167, 108, 0);
+}

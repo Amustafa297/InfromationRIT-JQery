@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IST Department at RIT</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+    <script src="./vendor/jquery.scrollUp.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="./js/app.js" type="module"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="./css/pluginStyles.css">
+    <script src="./js/myPlugin.js"></script>
+    
+
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <nav class="large">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#program">Programs</a></li>
+            <li><a href="#tables">Tables</a></li>
+        </ul>
+    </nav>
+
+    <div class="welcome" id="home">
+        <h1>INFORMATION SCIENCES & TECHNOLOGIES <span style="color: orange;">RIT</span></h1>
+    </div>
+    <div class="container">
+        <div class="about">
+            <section id="section-about"></section>
+        </div>
+        <div class="faculty1" id="faculty">
+            <h1>Faculty</h1>
+        </div>
+        <div class="faculty" >
+            <section id="section-faculty">
+
+            </section>
+        </div>
+
+        <div class="program1" id="program">
+            <h1>Undergraduate Program</h1>
+        </div>
+
+        <div class="undergraduate">
+            <section id="section-undergraduate"></section>
+        </div>
+
+        <div class="program2">
+            <h1>Graduate Program</h1>
+        </div>
+
+        <div class="graduate">
+            <section id="section-graduate"></section>
+        </div>
+
+        <div class="coopTable" id="tables">
+            <section id="section-table-coop">
+                <table id="coopTable" class="display"></table>
+            </section>
+        </div>
+
+        <div class="employmentTable">
+            <section id="section-table-employment">
+                <table id="employmentTable" class="display"></table>
+            </section>
+        </div>
+
+      
+
+
+
+
+
+    </div>
+    <div class="footer">
+        <p>All Rights Reserved <a href="https://www.linkedin.com/in/ardijan-mustafa/" class="my-link">Ardijan
+                Mustafa</a>&copy;</p>
+    </div>
+    <script>$(function () {
+            $.scrollUp();
+
+        });
+
+    </script>
+
+
+<!-- THIS PRELOADER IS FROM https://www.youtube.com/watch?v=mSfsGTIQlxg&ab_channel=EasyTutorials -->
+    <script>
+       $(window).on('load', function() {
+  var loader = $('#preloader');
+  setTimeout(function() {
+    loader.hide();
+  }, 1500); 
+});
+
+    </script>
+    
+
+</body>
+
+</html>

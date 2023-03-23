@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation {
+  background-color: black;
+  width: 100%;
+  height: 7vh;
+}
+.welcome {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../media/maxresdefault.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  
+}
+
+.welcome::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.459); 
+ 
+}
+
+.welcome h1 {
+  font-size: 4rem;
+  color: white;
+  padding-top: 25%;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 1;
+}
+
+
+
+.image {
+  background-repeat: no-repeat;
+  height: 120px;
+  margin-top: -30px;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "about"
+    "faculty1"
+    "faculty"
+    "program1"
+    "undergraduate"
+    "program2"
+    "graduate"
+    "coopTable"
+    "employmentTable";
+}
+
+.about {
+  grid-area: about;
+}
+
+.faculty {
+  grid-area: faculty;
+  margin-left: 10%;
+  margin-right: 10%;
+ 
+}
+.program1{
+  grid-area: program1;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.undergraduate {
+  grid-area: undergraduate;
+  margin-top: 40px;
+  text-align: justify;
+}
+.program2{
+  margin-top: 100px;
+  grid-area: program2;
+  text-align: center;
+}
+
+.graduate {
+  grid-area: graduate;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.coopTable {
+  margin-top: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-area: coopTable;
+}
+
+.employmentTable {
+  margin-top: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-area: employmentTable;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th {
+  background-color: #FFA500;
+  color: #FFF;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #FFE5B4;
+}
+
+.dataTables_wrapper {
+  margin-bottom: 30px;
+}
+.faculty-member-container {
+  position: relative;
+
+}
+.faculty-member-container img{
+  padding: 5px;
+}
+
+.faculty-member-img-container {
+  position: relative;
+}
+
+.faculty-member-img-container img {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.faculty-member-info-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #FFA500;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  opacity: 0.95;
+  text-align: center;
+}
+
+.faculty-member-info-container h3,
+.faculty-member-info-container p {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.programs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.programs-item {
+  border: 1px solid black;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  margin: 10px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.programs-item:hover {
+  transform: scale(1.05);
+  background-color: orange;
+  color: white;
+}
+
+.programs-item h3 {
+  margin-top: 0;
+}
+
+.programs-item h4 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.programs-item p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.my-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.my-link:hover {
+  text-decoration: underline;
+}
+#preloader{
+  background: #000 url('../media/83eb5c86fea7d8342fedfa4934c3e130_w200.gif') no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1000000;
+}
+.faculty1{
+  grid-area: faculty1;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.faculty1 h1{
+  color: #000;
+  font-size: 70px;
+
+}
+
+.errorBackground{
+  background-image: url('../media/error.gif');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.errorBackground::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.459); 
+}
+.errorBackground h1{
+color: white;
+text-align: center;
+font-size: 4em;
+z-index: 2;
+position: relative;
+padding-top: 20%;
+}
+.error404{
+color: red;
+}
